@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Budget</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Budget restant</h1>
+    <br />
+    <div id="budget"></div>
 
-<div id="budget">
-    
-</div>
+    <form id="formulaire">
+      <input type="text" id="libelle" placeholder="Libellé" required />
+      <br />
+      <br />
+      <input type="number" id="montant" placeholder="Montant" required />
+      <br />
+      <br />
+      <select name="categories" id="categories" placeholder="Sélectionner">
+        <option value="">Choisir une option</option>
+        <option value="depenses">Dépenses</option>
+        <option value="revenus">Revenus</option>
+      </select>
+      <br />
+      <br />
+      <!-- <input id="ajouter" value="Ajouter"> -->
+      <button type="button" onclick="getValue();">Valider</button>
+    </form>
 
-        <form id="formulaire">
-            <input type="text" id="libelle" placeholder="Libellé" required>
-            <br> <br>
-            <input type="text" id="montant" placeholder="Montant" required>
+    <div id="resultat"></div>
 
-            <select id="select"  placeholder="Sélectionner">
-                <option value="choisir">Choisir une option </option>
-                <option value="dépenses">Dépenses</option>
-                <option value="revenus">Revenus</option> 
-            </select>
-            <br> <br>
-            <input id="ajouter" value="Ajouter">
-
-        
-            
-            
-        </form>
-
-      <div id="resultat">
-          
+    <div id="tableau">
+      <div id="revenus">
+        <h2 class="revenus">
+          Total revenus <br />
+          <hr />
+        </h2>
+        <div id="totalrevenus"></div>
+        <hr />
       </div>
-
-
-
-
-
-
+      <div id="depenses">
+        <h2 class="depenses">
+          Total dépenses <br />
+          <hr />
+        </h2>
+        <div id="totaldepenses"></div>
+        <hr />
+      </div>
+    </div>
+    <br /><br />
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
