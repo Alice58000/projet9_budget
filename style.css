@@ -1,5 +1,6 @@
 body {
-  /* background-color: rgb(34, 78, 143); */
+  background-color: rosybrown;
+  color: white;
 }
 
 #budget {
@@ -7,7 +8,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #budget p {
@@ -17,6 +18,21 @@ body {
 #formulaire {
   padding: 20px;
   text-align: center;
+}
+
+#formulaire input {
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+#formulaire select {
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+#formulaire button {
+  font-size: 17px;
+  border-radius: 10px;
 }
 
 #form {
@@ -35,4 +51,26 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 37px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+}
+
+#budget {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#totalrevenus {
+  color: green;
+  font-size: 20px;
+}
+
+#totaldepenses {
+  color: red;
+  font-size: 20px;
 }

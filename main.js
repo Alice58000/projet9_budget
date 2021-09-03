@@ -1,5 +1,3 @@
- let budget = document.getElementById('budget');
- let ajouter = document.getElementById('ajouter');
  
 
 function getValue() {
@@ -20,7 +18,7 @@ function getValue() {
 
      let totaldepenses = document.getElementById('totaldepenses');
 
-     let budget = documentgetElementById('budget');
+     let budget = document.getElementById('budget');
      
      //  resultat.innerHTML= libelle;
 
@@ -73,6 +71,27 @@ function getValue() {
           }
 
 
+
+     if (categories==="depenses") {
+
+          // totaldepenses.textContent = montant;
+          totaldepenses.textContent = Number(totaldepenses.textContent) + Number(montant);
+
+          budget.textContent -= Number(montant);
+     }
+
+
+     if (categories==="revenus") {
+
+          // totalrevenus.textContent = montant;
+          totalrevenus.textContent = Number(totalrevenus.textContent) + Number(montant);
+
+          // totalrevenus.textContent = Number(totalrevenus.textContent) - Number(totaldepenses.textContent);
+
+          budget.textContent = Number(budget.textContent) + Number(montant);
+          
+
+     }
 
      }
 
