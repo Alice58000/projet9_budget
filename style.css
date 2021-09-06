@@ -74,3 +74,15 @@ h2 {
   color: red;
   font-size: 20px;
 }
+
+#libelle {
+  text-align: center;
+}
+
+#montant {
+  text-align: center;
+}
+
+button {
+  background-color: rgb(27 255 240);
+}
